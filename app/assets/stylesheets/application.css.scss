@@ -1,0 +1,44 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+	font-family: Open Sans, Helvetica, Arial, sans-serif;
+	background-color: white;
+}
+
+h3 {
+	margin: 0 0 0.25em 0 !important;
+	padding: 0 !important;
+	font-size: 1.5em;
+}
+
+label {
+	margin-top: 1em;
+	margin-bottom: 0.25em;
+	display: inline-block;
+}
+
+input, textarea, select, a, button {
+	outline: none;
+	font-family: inherit;
+	font-size: inherit;
+	border-radius: 4px;
+}
+
+::-webkit-input-placeholder { color: #DDD; }
+:-moz-placeholder { color: #DDD; }
+::-moz-placeholder { color: #DDD; }
+:-ms-input-placeholder { color: #DDD; }

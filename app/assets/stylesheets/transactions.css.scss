@@ -1,0 +1,146 @@
+// Place all the styles related to the transactions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$primary-color: #303030;
+
+input {
+	border: 1px solid #DDDDDD;
+	color: #303030;
+	padding: 7px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;  
+	text-align: left;
+}
+
+button, #card-number, #transaction_email {
+	width: 100%;
+}
+
+.fa-lock, .fa-circle-o-notch {
+	margin-right: 0.5em;
+	font-size: 0.9em !important;
+}
+
+button {
+	margin: 2em 0 1em 0;
+	font-weight: 600;
+	background-color: rgb(18, 114, 172);
+	box-shadow: rgba(0, 0, 0, 0.14902) 0px 1px 0px 0px;
+	padding: 10px 0;
+	color: white;
+	border: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	transition: all 0.3s ease 0s;
+}
+
+button:hover {
+	background-color: rgba(18, 114, 172, 0.8);
+	color: white;
+	cursor: pointer;
+}
+
+#please-wait {
+	background-color: rgba(18, 114, 172, 0.8);
+	color: white;
+}
+
+.form-container {
+	width: 340px;
+	margin: 3em auto;
+	background-color: #FFF;
+	border-radius: 6px;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+    animation: fadein 1s;
+    -moz-animation: fadein 1s;
+    -webkit-animation: fadein 1s;
+    -o-animation: fadein 1s;
+}
+
+@keyframes fadein { from { opacity:0;transform: translateY(-20px); } to { opacity:1;transform: translateY(0); } }
+@-moz-keyframes fadein { from { opacity:0;transform: translateY(-20px); } to { opacity:1;transform: translateY(0); } }
+@-webkit-keyframes fadein { from { opacity:0;transform: translateY(-20px); } to { opacity:1;transform: translateY(0); } }
+@-o-keyframes fadein { from { opacity:0;transform: translateY(-20px); } to { opacity: 1;transform: translateY(0); } }
+
+.form-header {
+	background-color: #F5F5F7;
+	border-bottom: 1px solid #D3D3D4;
+	border-radius: 6px 6px 0 0;
+	color: $primary-color;
+	font-size: 0.8em;
+	padding: 2em;
+	text-align: center;
+	margin-bottom: -1em;
+}
+
+.form-body {
+	padding: 35px;
+}
+
+.form-group {
+	float: left;
+	margin-right: 10px;
+}
+
+.input-group {
+	background-color: white;
+	border: 1px solid #DDDDDD;
+	border-radius: 4px;
+}
+
+.input-group input {
+	border: none;
+}
+
+.form-error {
+	color: red;
+}
+
+#card-parent {
+	position: relative;
+}
+
+#card-brand {
+	// Margin + z-index to position the card icon over
+	// the right-hand-side of the card number input
+	z-index: 10;
+	position: absolute;
+	right: 8px;
+	top: 7px;
+	font-size: 25px;
+}
+
+#card-provided {
+	margin-bottom: 0;
+}
+
+#disclaimer {
+	font-size: 0.8em;
+	color: #DDD;
+	text-align: center;
+}
+
+#disclaimer a, #disclaimer a:visited {
+	color: #DDD;
+}
+
+#disclaimer a:hover {
+	color: $primary-color;
+}
+
+.cvc-location {
+	height: 25px;
+	position: relative;
+	top: 49px;
+	display: none;
+}
+
+.cvc-location-visa {
+	display: inline-block;
+}

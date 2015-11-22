@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  status: MyString
+  email: MyString
+  amount: 1
+  stripe_token: MyString
+
+two:
+  status: MyString
+  email: MyString
+  amount: 1
+  stripe_token: MyString
